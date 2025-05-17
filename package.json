@@ -1,0 +1,17 @@
+{
+  "name": "bb-attractor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Add Attractors— animatable driver nodes— to define relationships and constraints between Locators, bones, and other scene objects in Blockbench!",
+  "scripts": {
+    "build": "webpack"
+  },
+  "devDependencies": {
+    "blockbench-types": "^4.12.2",
+    "ts-loader": "^9.5.2",
+    "tsconfig-paths-webpack-plugin": "^4.2.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  }
+}
