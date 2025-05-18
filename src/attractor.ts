@@ -1,15 +1,23 @@
 
 import { ui } from './ui'
 
-export enum AttractorType {
+export enum AttractorConstraintType {
     None,
     LookAt
 }
 
-export class Attractor extends Locator {
-    target?: Locator;
-    type: AttractorType = AttractorType.None;
-    // constraints: AttractorConstraint[] = [];
+type AttractorTarget = [OutlinerNode, AttractorConstraintType];
+
+export class Attractor {
+    constraints: AttractorTarget[] = [];
+
+	static all: Attractor[] = [];
+	static selected: Attractor[] = [];
+
+    /**Check if any elements of the type are in the project */
+	static hasAny(): boolean { return Attractor.all.length > 0; }
+	/**Check if any elements of the type are currently selected */
+	static hasSelected(): boolean { return Attractor.selected.length > 0; }
 
     static register(): void {
         OutlinerElement.registerType(Attractor, 'attractor');

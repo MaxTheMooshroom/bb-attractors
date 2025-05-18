@@ -9,7 +9,7 @@ module.exports = {
     main: "./src/plugin.ts",
   },
   output: {
-    path: path.resolve(__dirname, './build'),
+    path: path.resolve(__dirname, './dist'),
     filename: "attractors.js"
   },
   resolve: {
