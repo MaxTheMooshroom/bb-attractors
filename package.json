@@ -7,8 +7,8 @@
     "build": "webpack"
   },
   "devDependencies": {
-    "@bb-plugins/api": "file:../bb-plugin-api",
-    "@bb-plugins/types": "file:../bb-api-types",
+    "@bb-plugins/api": "MaxTheMooshroom/bb-plugin-api",
+    "@bb-plugins/types": "MaxTheMooshroom/bb-api-types",
     "ts-loader": "^9.5.2",
     "tsconfig-paths-webpack-plugin": "^4.2.0",
     "url-loader": "^4.1.1",
